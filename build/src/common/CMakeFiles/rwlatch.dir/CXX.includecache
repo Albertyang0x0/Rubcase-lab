@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../src/common/macros.h
+cassert
+-
+stdexcept
+-
+
+/home/albert/rucbase-lab/src/common/rwlatch.cpp
+rwlatch.h
+/home/albert/rucbase-lab/src/common/rwlatch.h
+
+/home/albert/rucbase-lab/src/common/rwlatch.h
+climits
+-
+condition_variable
+-
+mutex
+-
+common/macros.h
+/home/albert/rucbase-lab/src/common/common/macros.h
+

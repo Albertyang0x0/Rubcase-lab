@@ -1,0 +1,25 @@
+digraph G {
+INT_4[shape=plain color=pink label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+<TR><TD COLSPAN="2">page_no=4</TD></TR>
+<TR><TD COLSPAN="2">max_size=5,min_size=2</TD></TR>
+<TR><TD PORT="p2">5</TD>
+<TD PORT="p6">8</TD>
+</TR></TABLE>>];
+LEAF_2[shape=plain color=green label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+<TR><TD COLSPAN="2">page_no=2</TD></TR>
+<TR><TD COLSPAN="2">max_size=5,min_size=2</TD></TR>
+<TR><TD>5</TD>
+<TD>6</TD>
+</TR></TABLE>>];
+LEAF_2 -> LEAF_6;
+{rank=same LEAF_2 LEAF_6};
+INT_4:p2 -> LEAF_2;
+LEAF_6[shape=plain color=green label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4">
+<TR><TD COLSPAN="3">page_no=6</TD></TR>
+<TR><TD COLSPAN="3">max_size=5,min_size=2</TD></TR>
+<TR><TD>8</TD>
+<TD>9</TD>
+<TD>10</TD>
+</TR></TABLE>>];
+INT_4:p6 -> LEAF_6;
+}
